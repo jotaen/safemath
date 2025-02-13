@@ -10,11 +10,11 @@ func Add(a int, b int) (int, error) {
 
 	if b > 0 {
 		if a > MaxInt-b {
-			return 0, OverflowErr
+			return 0, ErrOverflow
 		}
 	} else {
 		if a < MinInt-b {
-			return 0, OverflowErr
+			return 0, ErrOverflow
 		}
 	}
 

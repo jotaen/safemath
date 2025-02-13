@@ -6,7 +6,7 @@ import (
 )
 
 var (
-	OverflowErr = errors.New("overflow")
+	ErrOverflow = errors.New("overflow")
 
 	// MaxInt represents the largest possible (positive) integer value.
 	MaxInt = math.MaxInt

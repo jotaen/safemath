@@ -3,7 +3,7 @@ package safemath
 func assertOperandInRange(xs ...int) error {
 	for _, x := range xs {
 		if x < MinInt {
-			return OverflowErr
+			return ErrOverflow
 		}
 	}
 	return nil

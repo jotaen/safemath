@@ -9,7 +9,7 @@ func Multiply(a int, b int) (int, error) {
 	}
 
 	if b != 0 && abs(a) > MaxInt/abs(b) {
-		return 0, OverflowErr
+		return 0, ErrOverflow
 	}
 
 	return a * b, nil
