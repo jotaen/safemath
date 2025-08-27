@@ -18,13 +18,13 @@ func main() {
 	if err != nil {
 		fmt.Println("Overflow!")
 	} else {
-		fmt.Println(res)
+		fmt.Println(res) // <---- Prints "3"
 	}
 
 	// Overflow (on 64-bit systems):
 	res, err = safemath.Add(9223372036854775807, 1)
 	if err != nil {
-		fmt.Println("Overflow!")
+		fmt.Println("Overflow!")   // <---- Prints "Overflow!"
 	} else {
 		fmt.Println(res)
 	}
